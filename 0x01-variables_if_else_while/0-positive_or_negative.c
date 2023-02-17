@@ -5,7 +5,7 @@
 /* more headers goes there */
 
 /**
- * main - using printf function to show the value of n if it's positive, negative or equal to 0
+ * main - function to show the value of n if it's positive,negative or = 0
  *
  * Return: 0 (Success)
  */
