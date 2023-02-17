@@ -1,11 +1,11 @@
 #include <stdio.h>
 
- /**
- * main - print alphabet in lowercase except for 'q' and 'e'
+/**
+ * main - a function that print alphabet in lowercase except for 'q' and 'e'
  *
  * Return: 0 (Success)
- */
- int main(void)
+*/
+int main(void)
 {
 	char c;
 
