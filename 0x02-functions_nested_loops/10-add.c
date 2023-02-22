@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * _islower - Entry point
+  * add - Entry point
   * @num1: first number
   * @num2: second number
   * Return: sum of num1 and num2
