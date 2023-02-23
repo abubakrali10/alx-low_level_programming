@@ -4,7 +4,7 @@
   * mul - Entry point
   * @a: first number
   * @b: second number
-  * Return: multiplication of first number and second number
+  * Return: multiplication a and b
   */
 
 int mul(int a, int b)
