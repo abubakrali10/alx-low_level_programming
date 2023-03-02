@@ -16,7 +16,6 @@ char *cap_string(char *s)
 	while (s[count])
 	{
 		i = 0;
-
 		while (i < word_sep_count)
 		{
 			if ((count == 0 || s[count - 1] == word_sep[i]) && (s[count] >= 97 && s[count] <= 122))
