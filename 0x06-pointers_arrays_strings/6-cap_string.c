@@ -10,7 +10,9 @@
 char *cap_string(char *s)
 {
 	int count = 0, i;
+
 	int word_sep_count = 13;
+
 	char word_sep[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 	
 	while (s[count])
