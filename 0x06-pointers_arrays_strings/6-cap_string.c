@@ -3,24 +3,24 @@
 
 /**
  * cap_string - capitalizes all words of a string
- * @s: input string.
+ * @str: input string.
  * Return: the pointer to dest.
  */
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
 	int count = 0, i;
 	int word_sep_count = 13;
 	char word_sep[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	while (s[count])
+	while (str[count])
 	{
 		i = 0;
 
 		while (i < word_sep_count)
 		{
-			if ((count == 0 || s[count - 1] == word_sep[i]) && (s[count] >= 97 && s[count] <= 122))
-				s[count] -= 32;
+			if ((count == 0 || str[count - 1] == word_sep[i]) && (str[count] >= 97 && str[count] <= 122))
+				str[count] -= 32;
 
 			i++;
 		}
@@ -28,5 +28,5 @@ char *cap_string(char *s)
 		count++;
 	}
 
-	return (s);
+	return (str);
 }
