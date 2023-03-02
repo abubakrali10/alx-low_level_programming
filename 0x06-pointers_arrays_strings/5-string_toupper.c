@@ -2,12 +2,12 @@
 
 /**
   * string_toupper - Changes all lowercase letters to uppercase
-  * @p: The string will be modified
+  * @n: The string will be modified
   *
   * Return: char
   */
 
-char *string_toupper(char *)
+char *string_toupper(char *n)
 {
 	int i;
 
