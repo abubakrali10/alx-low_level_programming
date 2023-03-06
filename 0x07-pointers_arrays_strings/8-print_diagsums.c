@@ -6,15 +6,12 @@
  * diagonals of a square matrix of integers
  * @a: input pointer.
  * @size: size of the matrix
- * Return: no return.
+ * Return: void.
  */
 
 void print_diagsums(int *a, int size)
 {
-	int sum1, sum2, i;
-
-	sum1 = 0;
-	sum2 = 0;
+	int sum1 = 0, sum2 = 0, i;
 
 	for (i = 0; i < size; i++)
 	{
