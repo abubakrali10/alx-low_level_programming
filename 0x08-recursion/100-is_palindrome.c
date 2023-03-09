@@ -1,5 +1,9 @@
 #include "main.h"
 
+int is_palindrome_helper(char *s, int start, int end);
+int find_strlen(char *s);
+int is_palindrome(char *s);
+
 /**
  * is_palindrome_helper - a helper function for is_palindrome function.
  * @s: string to check.
@@ -26,6 +30,25 @@ int is_palindrome_helper(char *s, int start, int end)
 }
 
 /**
+ * find_strlen - Returns the length of a string.
+ * @s: The string to be measured.
+ *
+ * Return: The length of the string.
+ */
+int find_strlen(char *s)
+{
+	int len = 0;
+
+	if (*(s + len))
+	{
+		len++;
+		len += find_strlen(s + len);
+	}
+
+	return (len);
+}
+
+/**
  * is_palindrome - function that checks if a string is a plaindrome.
  * @s: the string to check.
  * Return: 1 if the string is a palindrome, 0 otherwise.
@@ -33,10 +56,6 @@ int is_palindrome_helper(char *s, int start, int end)
 
 int is_palindrome(char *s)
 {
-	int len = 0;
-	while (s[len] != '\0')
-	{
-		len++;
-	}
+	int len = find_strlen(s);
 	return is_palindrome_helper(s, 0, len - 1);
 }
