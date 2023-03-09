@@ -57,5 +57,6 @@ int find_strlen(char *s)
 int is_palindrome(char *s)
 {
 	int len = find_strlen(s);
-	return is_palindrome_helper(s, 0, len - 1);
+
+	return (is_palindrome_helper(s, 0, len - 1));
 }
