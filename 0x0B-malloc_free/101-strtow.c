@@ -44,7 +44,7 @@ int count_words(char *str)
   */
 char **strtow(char *str)
 {
-	int i, j, len, start, end, word_count = count_words(str);
+	int i, j, k, len, start, end, word_count = count_words(str);
 	char **words = NULL;
 
 	if (str == NULL || str[0] == '\0')
@@ -79,7 +79,7 @@ char **strtow(char *str)
 				return (NULL);
 			}
 
-			for (int k = 0; k < len; k++)
+			for (k = 0; k < len; k++)
 			{
 				words[j][k] = str[start + k];
 			}
