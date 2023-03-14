@@ -19,14 +19,14 @@ int is_space(char c)
   */
 int count_words(char *str)
 {
-	int i, count = 0; in_word = 0;
+	int i, count = 0, in_word = 0;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (!is_space(str[i] && !in_word))
 		{
 			in_word = 1;
-			count++
+			count++;
 		}
 		else if (is_space(str[i]))
 		{
