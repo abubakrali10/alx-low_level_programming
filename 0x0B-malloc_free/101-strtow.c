@@ -59,7 +59,7 @@ char **strtow(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; j = 0; str[i] != '\0' && j < word_count; i++)
+	for (i = 0; j = 0; (str[i] != '\0' && j < word_count); i++)
 	{
 		if (!is_space(str[i]))
 		{
