@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 
-int strlen(char *s);
+int str_len(char *s);
 
 /**
  * str_concat - get ends of input and add together for size
@@ -17,14 +17,14 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		return (NULL);
+		s2 = "";
 	}
 
-	length = strlen(s1) + strlen(s2);
+	length = str_len(s1) + str_len(s2);
 	combined_str = malloc(sizeof(char) * length);
 
 	if (combined_str == NULL)
@@ -45,18 +45,18 @@ char *str_concat(char *s1, char *s2)
 }
 
 /**
- * strlen - returns the length of a string
+ * str_len - returns the length of a string
  * @s: pointer to a char.
  * Return: The length of @s
  */
 
-int strlen(char *s)
+int str_len(char *s)
 {
 	int i, len = 0;
 
 	for (i = 0; s[i]; i++)
 	{
-		len++
+		len++;
 	}
 	return (len);
 }
