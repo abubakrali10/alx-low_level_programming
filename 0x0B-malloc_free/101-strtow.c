@@ -64,13 +64,11 @@ char **strtow(char *str)
 		if (!is_space(str[i]))
 		{
 			start = i;
-			
 			while (str[i] != '\0' && !is_space(str[i]))
 			{
 				i++;
 			}
 			end = i - 1;
-			
 			len = end - start + 1;
 			words[j] = (char *)malloc(sizeof(char) * (len + 1));
 
