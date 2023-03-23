@@ -9,7 +9,7 @@
  * Return: void
  */
 
-void print_strings(const char *seperator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list arguments;
 	unsigned int i;
@@ -19,23 +19,15 @@ void print_strings(const char *seperator, const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(arguments, char *);
-
-		if (str == NULL)
-		{
-			printf("(nil)");
-		}
-		else
-		{
+		str = (va_arg(arguments, char*));
+		if (str != NULL)
 			printf("%s", str);
-		}
+		else
+			printf("(nil)");
 
-		if (i < n - 1 && seperator)
-		{
-			printf("%s", seperator);
-		}
+		if (separator != NULL && i < n - 1)
+			printf("%s", separator);
 	}
-	va_end(arguments);
-
 	printf("\n");
+	va_end(arguments);
 }
