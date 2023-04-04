@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * print_listint - function prints all elements within singly linked list
- * @h: head pointer to the singly linked list
- * Return: count of nodes
- */
+  * print_listint - prints all elements of a list_t list
+  * @h: singly linked list to print
+  * Return: number of nodes in the list
+  */
 
 size_t print_listint(const listint_t *h)
 {
