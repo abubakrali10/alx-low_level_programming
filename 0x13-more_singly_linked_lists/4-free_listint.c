@@ -5,6 +5,7 @@
 /**
  * free_listint - free a listint_t linked list
  * @head: a pointer to head of singly linked list
+ * Return: nothing
  */
 
 void free_listint(listint_t *head)
