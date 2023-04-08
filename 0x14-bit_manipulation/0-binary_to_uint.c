@@ -6,7 +6,7 @@
  * @str: pointer to char
  * Return: length of a string
  */
-int _strlen(char *str)
+int _strlen(const char *str)
 {
 	int i = 0, len = 0;
 
@@ -23,7 +23,7 @@ int _strlen(char *str)
  * @b: pointer to binary number to convert
  * Return: the converted result
  */
-unsigned int binary_to_uint(char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	int indx, powe = 1;
 	unsigned int sum = 0;
