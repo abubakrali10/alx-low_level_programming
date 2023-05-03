@@ -27,4 +27,4 @@ Here is a list of the projects:
 * [0x16. C - Simple Shell]()
 
 # Author
-* Abubakr Ali [<abubakrali10>](https://github.com/abubakrali10)
+* Abubakr Ali [abubakrali10](https://github.com/abubakrali10)
